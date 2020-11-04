@@ -1,0 +1,25 @@
+{
+  "name": "OC_projet_developpeur_web_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "Troisième projet du parcours \"Développeur web\" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MathisBarre/MathisBarre_3_06102020.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MathisBarre/MathisBarre_3_06102020/issues"
+  },
+  "homepage": "https://github.com/MathisBarre/MathisBarre_3_06102020#readme",
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "sass": "^1.28.0"
+  }
+}

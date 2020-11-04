@@ -53,10 +53,14 @@ Vous pouvez retrouver le [brief complet ici](https://s3-eu-west-1.amazonaws.com/
 
 ## Notes
 
+**Polices :**
+- Logo & titres: Shrikhand
+- Texte: Roboto
+
 **Couleurs :**
-  - Primaire: #9356DC
-  - Secondaire: #FF79DA
-  - Tertiaire: #99E2D0
+- Primaire: #9356DC
+- Secondaire: #FF79DA
+- Tertiaire: #99E2D0
 
 **Contraintes :**
 - Approche mobile-first: oui
