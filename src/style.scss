@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 body {
   margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+@mixin button($type) {
+  // ...
 }
 
 .container {
@@ -10,3 +16,105 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
 }
 
+.header {
+
+  &__logo {
+    font-family: "Shrikhand", "cursive";
+  }
+}
+
+.local {
+
+  &_icon {
+
+  }
+
+  &__text {
+
+  }
+}
+
+.hero {
+
+  &__title {
+
+  }
+
+  &__subtitle {
+
+  }
+
+  &__btn {
+    @include button(primary)
+  }
+}
+
+.tuto {
+
+  &__title {
+
+  }
+
+  &__steps {
+
+  }
+}
+
+.step {
+
+  &__icon {
+
+  }
+
+  &__text {
+
+  }
+}
+
+.restaurants {
+
+  &__title {
+
+  }
+}
+
+.card {
+
+  &__img {
+
+  }
+
+  &__badge {
+
+  }
+
+  &__footer {
+
+  }
+
+  &__title {
+
+  }
+
+  &__subtitle {
+
+  }
+
+  &__btn {
+
+  }
+}
+
+.footer {
+  &__logo {
+
+  }
+
+  &__link {
+
+  }
+
+  &__icon {
+
+  }
+}
