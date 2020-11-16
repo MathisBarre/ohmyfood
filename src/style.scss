@@ -1,62 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
 
 @mixin button($type) {
-  // ...
+  border: 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 100px;
+  color: white;
+  background: $color-primary;
+  background: linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+  cursor: pointer;
 }
+
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+$appPadding: 1rem;
 
 .container {
   max-width: 425px;
   box-sizing: border-box;
   margin: auto;
-  padding: 0 2rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
 }
 
 .header {
+  padding: 1rem $appPadding;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.89);
+  position: relative;
+  z-index: 1000;
 
   &__logo {
     font-family: "Shrikhand", "cursive";
+    margin: 0;
+    text-align: center;
   }
 }
 
 .local {
+  display: flex;
+  justify-content: center;
+  padding: 1.25rem $appPadding;
+  background-color: rgb(243, 243, 243);
+  font-size: 1.2rem;
+  position: relative;
 
-  &_icon {
-
+  &__icon {
+    margin-right: 1rem;
   }
 
   &__text {
-
+    font-weight: 700;
   }
 }
 
 .hero {
+  padding: 2rem;
+  text-align: center;
+  background-color: rgb(250, 250, 250);
 
   &__title {
-
+    margin: 0;
   }
 
   &__subtitle {
-
+    font-weight: 300;
+    margin: 1.5rem 0;
   }
 
   &__btn {
-    @include button(primary)
+    @include button(primary);
   }
 }
 
 .tuto {
+  padding: ( $appPadding + 1rem ) $appPadding;
 
   &__title {
-
+    margin-top: 0;
   }
 
   &__steps {
+    padding: 0.5rem;
+  }
 
+  &__step {
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+    border-radius: 100px;
+
+    &::marker {
+      position: relative;
+      display: block;
+      background: $color-primary;
+    }
   }
 }
 
