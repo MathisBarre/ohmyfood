@@ -23,7 +23,7 @@ $color-tertiary: #99E2D0;
 $appPadding: 1rem;
 
 .container {
-  max-width: 425px;
+  max-width: 435px;
   box-sizing: border-box;
   margin: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
@@ -31,7 +31,7 @@ $appPadding: 1rem;
 
 .header {
   padding: 1rem $appPadding;
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.89);
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1000;
 
@@ -86,35 +86,54 @@ $appPadding: 1rem;
   }
 
   &__steps {
-    padding: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
   }
 
   &__step {
     padding: 1.5rem;
-    margin: 0.5rem 0;
+    margin: 1rem 0 1rem 0.75rem;
     box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-    border-radius: 100px;
+    border-radius: 1.25rem;
+    background-color: #f6f6f6;
+    display: flex;
+    position: relative;
 
-    &::marker {
-      position: relative;
-      display: block;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::before {
+      counter-increment: compteListe 1;
+      content: counter(compteListe) " ";
       background: $color-primary;
+      height: 1.5rem;
+      width: 1.5rem;
+      border-radius: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: absolute;
+      left: -0.75rem;
     }
   }
-}
-
-.step {
 
   &__icon {
-
-  }
-
-  &__text {
-
+    margin-right: 1rem;
+    color: #7e7e7e;
   }
 }
 
 .restaurants {
+  background-color: #f6f6f6;
+  padding: ($appPadding + 1rem) $appPadding;
 
   &__title {
 
@@ -122,42 +141,105 @@ $appPadding: 1rem;
 }
 
 .card {
+  background-color: white;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  position: relative;
 
   &__img {
-
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0px;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
   }
 
   &__badge {
-
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
   }
 
   &__footer {
+    padding: 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
 
+  &__content {
+    flex: 1;
   }
 
   &__title {
-
+    margin: 0;
+    margin-bottom: 0.25rem;
   }
 
   &__subtitle {
-
+    margin: 0;
   }
 
   &__btn {
-
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
   }
 }
 
 .footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: $appPadding;
+  
   &__logo {
+    color: white;
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: $appPadding;
+  }
 
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__listElt {
+    margin: 0.5rem 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
+    color: white;
+    text-decoration: none;
 
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__icon {
-
+    width: 1.2rem;
+    margin-right: 0.5rem;
   }
 }
