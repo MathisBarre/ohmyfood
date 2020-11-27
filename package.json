@@ -20,6 +20,7 @@
   "homepage": "https://github.com/MathisBarre/MathisBarre_3_06102020#readme",
   "devDependencies": {
     "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.4",
     "sass": "^1.28.0"
   }
 }
