@@ -47,6 +47,10 @@
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
+
+    @media (min-width:64rem) {
+      display: flex;
+    }
   }
 
   &__step {
@@ -57,6 +61,16 @@
     background-color: #f6f6f6;
     display: flex;
     position: relative;
+
+    @media (min-width:64rem) {
+      flex: 1;
+      margin: 0;
+      margin-left: 2rem;
+
+      &:first-child {
+        margin-left: 0.75rem;
+      }
+    }
 
     &:first-child {
       margin-top: 0;
@@ -97,9 +111,19 @@
   }
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  @media (min-width:64rem) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .card {
   background-color: white;
-  margin: 1rem 0;
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
