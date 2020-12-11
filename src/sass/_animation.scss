@@ -6,3 +6,28 @@
     transform: scale(1);
   }
 }
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+} 
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(0.5rem);
+  }
+  75% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+  // 0% {
+  //   transform: translateY(0);
+  // }
+}
