@@ -2,7 +2,13 @@
   "name": "oc_projet_developpeur_web_3_ohmyfood",
   "version": "1.0.0",
   "description": "Troisième projet du parcours \"Développeur web\" chez OpenClassroom. L'objectif d'intégrer puis de dynamiser une page web avec des animations CSS en utilisant le préprocesseur Sass",
-  "main": "index.js",
+  "main": "index.html",
+  "sitemap": {
+    "siteURL": "https://ohmyfood.mathisbarre.com/",
+    "exclude": [
+      "img/**/*"
+    ]
+  },
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -22,5 +28,8 @@
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4",
     "sass": "^1.28.0"
+  },
+  "dependencies": {
+    "parcel-plugin-sitemap": "^2.1.6"
   }
 }
