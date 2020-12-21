@@ -6,7 +6,7 @@
   top: 0;
   background-color: rgba(255, 255, 255, 0.90);
   animation: loader 0.01s;
-  animation-delay: 3s;
+  animation-delay: 1.75s;
   animation-fill-mode: both;
   z-index: 10000;
   display:flex;
@@ -18,7 +18,7 @@
     width: 1rem;
     border-radius: 1rem;
     animation: jump 1s;
-    animation-iteration-count: 3;
+    animation-iteration-count: 1;
 
     &Container {
       display: flex;

@@ -138,13 +138,20 @@
   animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
   animation-fill-mode: both;
   transform: scale(0);
+  max-width: 100%;
 
   &__title {
     margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &__description {
     margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   &__price {
