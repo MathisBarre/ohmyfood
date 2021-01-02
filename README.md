@@ -64,7 +64,7 @@ Gitmoji https://gitmoji.carloscuesta.me/
 
 ## Tester le projet
 
-Pour tester simplement & rapidement, veuillez préférer allez sur la démo en ligne : [ohmyfood.mathisbarre.com](https://ohmyfood.mathisbarre.com/)
+Pour tester simplement & rapidement, veuillez préférer visiter la démo en ligne : [ohmyfood.mathisbarre.com](https://ohmyfood.mathisbarre.com/)
 
 Sinon, clonez le projet
 ```terminal
