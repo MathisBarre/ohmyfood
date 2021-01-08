@@ -223,4 +223,5 @@
 
 .commandBtn {
   @include button(primary);
+  cursor: pointer;
 }
