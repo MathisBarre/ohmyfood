@@ -11,10 +11,17 @@ import splitbee from '@splitbee/web';
   console.log("Live website detected, tracking activated")
 
   // SPLITBEE EVENT TRACKING
-  document.getElementById("dc-mainlink").addEventListener("click", (e) => {
-    console.log("Click on devs.coffee link tracked")
+  document.getElementById("dc-mainlink").addEventListener("click", async (e) => {
     e.preventDefault()
-    splitbee.track("Visit devs.coffee")
-    location.href = "https://devs.coffee"
+    console.log("Trying to track click event...")
+
+    try {
+      await splitbee.track("Visit devs.coffee")
+      console.log("Click on devs.coffee link successfully tracked")
+    } catch {
+      console.log("Tracking on devs.coffee click failed")
+    } finally {
+      location.href = "https://devs.coffee"
+    }
   })
 })()
