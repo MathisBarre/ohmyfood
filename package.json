@@ -35,5 +35,8 @@
     "@babel/runtime": "^7.15.4",
     "@splitbee/web": "^0.3.0",
     "parcel-plugin-sitemap": "^2.1.6"
-  }
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
 }

@@ -1,5 +1,4 @@
 import splitbee from '@splitbee/web';
-import 'regenerator-runtime/runtime'
 
 (() => {
   console.log("Analytics script loaded")
