@@ -1,17 +1,18 @@
 import splitbee from '@splitbee/web';
+import 'regenerator-runtime/runtime'
 
 (() => {
   console.log("Analytics script loaded")
 
   const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1' || location.href.startsWith("file:///")
-  // if (isLocalhost) return console.log("Localhost detected, tracking disabled")
+  if (isLocalhost) return console.log("Localhost detected, tracking disabled")
 
   // SPLITBEE INIT
   splitbee.init({ token: "AMP3UVDXSDVO" })
   console.log("Live website detected, tracking activated")
 
   // SPLITBEE EVENT TRACKING
-  document.getElementById("dc-mainlink").addEventListener("click", () => trackClick())
+  document.getElementById("dc-mainlink").addEventListener("click", (e) => trackClick(e))
 })()
 
 async function trackClick(e) {
