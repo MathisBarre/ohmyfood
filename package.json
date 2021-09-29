@@ -30,6 +30,7 @@
     "sass": "^1.28.0"
   },
   "dependencies": {
+    "@splitbee/web": "^0.3.0",
     "parcel-plugin-sitemap": "^2.1.6"
   }
 }
